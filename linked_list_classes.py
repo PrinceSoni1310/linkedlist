@@ -105,16 +105,6 @@ class SinglyLinkedList:
             elements.append(current.data)
             current = current.next
         return elements
-    
-    def calculate_sum(self):
-        """Calculate sum of all numeric elements in the list"""
-        total = 0
-        current = self.head
-        while current:
-            if isinstance(current.data, (int, float)):
-                total += current.data
-            current = current.next
-        return total
 
 class DoublyLinkedList:
     """Doubly linked list implementation"""
@@ -229,16 +219,6 @@ class DoublyLinkedList:
             elements.append(current.data)
             current = current.prev
         return elements
-    
-    def calculate_sum(self):
-        """Calculate sum of all numeric elements in the list"""
-        total = 0
-        current = self.head
-        while current:
-            if isinstance(current.data, (int, float)):
-                total += current.data
-            current = current.next
-        return total
 
 class CircularLinkedList:
     """Circular linked list implementation"""
@@ -370,17 +350,3 @@ class CircularLinkedList:
             if current == self.head:
                 break
         return elements
-    
-    def calculate_sum(self):
-        """Calculate sum of all numeric elements in the circular list"""
-        if self.head is None:
-            return 0
-        total = 0
-        current = self.head
-        while True:
-            if isinstance(current.data, (int, float)):
-                total += current.data
-            current = current.next
-            if current == self.head:
-                break
-        return total
