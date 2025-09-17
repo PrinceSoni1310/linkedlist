@@ -2563,7 +2563,7 @@ Final Sum: 60
         """)
 
     with col2:
-        st.markdown("""
+        st.markdown(""",
         <div class="code-container">
         <div class="code-header">
         <span>🔄 Enhanced Circular Implementation</span>
