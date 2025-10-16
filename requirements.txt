@@ -3,5 +3,5 @@ matplotlib
 plotly
 numpy
 networkx
-pillow
+Pillow
 pandas
